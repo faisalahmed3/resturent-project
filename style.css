@@ -1,0 +1,306 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+[class*="col-"]{  
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+/* [class*="col-"]{
+    width: 100%;
+} */
+.row{
+    width: 100%;
+}
+.row::after{
+    clear: both;
+    content: '';
+    display: block;
+}
+
+
+/* heder starts */
+.logo a img{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+header{
+    background-color: teal;
+    padding: 0% 1%;
+    text-align: center;
+}
+nav ul li{
+    display: block;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-family: 'Roboto', sans-serif;
+    transform:  .4s;
+    font-weight: bold
+}
+
+nav ul li a:hover{
+    border-radius: 20px;
+    background-color: gray;
+}
+/* header ends */
+/* banner starts */
+#banner-design{
+    background-image: url(Image/Banner-imag.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-content{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.banner-content h1{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 2rem;
+    color: black;
+    background-color: rgba(255,255,0,0.448);
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-content p{
+    width: 250px; 
+    margin: 15px auto;
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+   
+}
+#btn{
+    width: 150px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: tomato;
+    transition: .5s;
+}
+#btn:hover{
+    transform: scale(1.2);
+}
+/* Banner ends */
+/* about-us starts */
+#about-us{
+    padding: 1%;
+}
+.about-us-content{
+    text-align: center;
+}
+.about-us-content h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.about-us-content p{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+   text-align: justify;
+}
+/* about us ends */
+/* food manu starts here */
+#food-manu{
+    padding:1%;
+}
+.card-body{
+    text-align: center;
+}
+.card-body img{
+    max-width:100% ;
+    height: auto;
+    display: block;
+}
+.item-desc{
+  background-color: rgb(111, 145, 175);
+}
+.item-name{
+    background-color: tomato;
+    color: white;
+    padding: 5px;
+}
+.item-desc>p{
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.card{
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+/* food manu ends here */
+/* contact starts */
+
+#contact-us{
+     background-color:rgb(55, 80, 80);
+     padding: 1%;
+}
+.contact-Us{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.contact-details p, address{
+    font-size: 0.8rem;
+    
+}
+/* contact ends */
+footer{
+    padding: 1%;
+    color: white;
+    background-color:#060930 ;
+}
+footer p{
+    line-height: 30px;
+    font-size: .8rem;
+    text-align: center;
+}
+.social-menus{
+    text-align: center;
+}
+.icon-style{
+    color: tomato;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 10px;
+    transition: 0.4s;
+    text-align: center;
+}
+.icon-style:hover{
+    background-color: white;
+    transform: scale(1.2);
+}
+
+/* for small devices (potrait tablet and large phone) */
+@media(min-width: 576px ) {
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;} 
+
+}
+
+/* for medium  devices (potrait tablet and large phone) */
+@media(min-width: 768px ) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;} 
+
+}
+/* for large devices (potrait tablet and large phone 992px and upper ) */
+@media(min-width: 992px ) {
+    .logo{
+        text-align: left;
+    }
+    nav ul{
+        text-align: right;
+    }
+    nav ul li{
+       display: inline-block;
+   }
+   nav ul il a{
+       display: inline-block;
+       transition: 0.4S;
+   }
+   nav ul li a:hover{
+      background-color: transparent; 
+      transform: scale(1.2);
+      border-radius: 0%;
+   }
+   /* banneer starts here */
+
+   #banner-design{
+       position: relative;
+       height: 100vh;
+   }
+  .banner-content{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+    .banner-content h1{
+        width: 700px;
+        font-size: 3.5rem;
+    }
+    .banner-content p{
+        width: 500px;
+        font-size: 2rem;
+    }
+    /* footer start */
+
+    footer p{
+        text-align: left;
+    }
+    .social-menus {
+        text-align: right;
+         
+    }
+
+
+     /* footer ends */
+
+
+   /* banneer ends here */
+
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;} 
+    
+}
