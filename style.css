@@ -59,7 +59,7 @@ nav ul li a:hover{
 /* header ends */
 /* banner starts */
 #banner-design{
-    background-image: url(./Image/Banner-imag.jpg);
+    background-image: url(image/Banner-imag.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
